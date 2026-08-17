@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Patalu 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- DECORATIONS -->
+    <div class="floating-hearts">
+        <span>💗</span>
+        <span>💕</span>
+        <span>🌸</span>
+        <span>💖</span>
+        <span>✨</span>
+        <span>💞</span>
+        <span>🌷</span>
+    </div>
+
+
+    <!-- SCREEN 1 -->
+
+    <section id="home" class="screen active">
+
+        <div class="stars">✨ ✨ ✨</div>
+
+        <div class="welcome">
+
+            <p class="top-text">
+                🌸 A little surprise made with lots of love 🌸
+            </p>
+
+            <h1>
+                Hey Patalu! 💗
+            </h1>
+
+            <p class="intro-text">
+                This isn't just a birthday wish... 🥹
+            </p>
+
+            <p class="sub-text">
+                I made a tiny little world of memories
+                just for you. 🎀✨
+            </p>
+
+            <button onclick="startSurprise()">
+                ✨ ENTER YOUR SURPRISE ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 2 -->
+
+    <section id="giftScreen" class="screen">
+
+        <div class="gift-page">
+
+            <p class="top-text">
+                🎀 Something special is waiting for you...
+            </p>
+
+            <h1>
+                Patalu, Ready? 👀💗
+            </h1>
+
+            <p>
+                Open this little gift 🎁
+            </p>
+
+            <div class="gift" onclick="openGift()">
+
+                <div class="gift-lid"></div>
+
+                <div class="gift-body">
+
+                    <div class="vertical-ribbon"></div>
+
+                    <div class="horizontal-ribbon"></div>
+
+                </div>
+
+                <div class="bow">
+                    🎀
+                </div>
+
+            </div>
+
+            <p class="tap">
+                👆 Tap the gift
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 3 -->
+
+    <section id="birthdayScreen" class="screen">
+
+        <div class="birthday">
+
+            <p class="top-text">
+                🌸 Today is all about YOU 🌸
+            </p>
+
+            <h1>
+                🎉 HAPPY BIRTHDAY 🎉
+            </h1>
+
+            <h2>
+                PATALU 💗✨
+            </h2>
+
+            <div class="cake">
+                🎂
+            </div>
+
+            <p class="birthday-message">
+                Today isn't just another day...
+                <br>
+                It's the day someone really special was born. 🥹💖
+            </p>
+
+            <p class="wish">
+                May your life always be filled with
+                happiness, laughter, love and beautiful memories. 🌸✨
+            </p>
+
+            <button onclick="showMemories()">
+                📸 OUR MEMORIES
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 4 -->
+
+    <section id="memoryScreen" class="screen">
+
+        <div class="memory-page">
+
+            <h1>
+                📸 Our Beautiful Memories
+            </h1>
+
+            <p class="top-text">
+                Some moments are simply unforgettable... 💗
+            </p>
+
+
+            <div class="gallery">
+
+                <div class="photo-card">
+                    <img src="images/photo1.jpg">
+                    <p>And this is where the craziness begins 😂💗</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo2.jpg">
+                    <p>One picture, a thousand memories 🥹✨</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo3.jpg">
+                    <p>How are we always this crazy? 😂😭</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo4.jpg">
+                    <p>A moment I'll always keep close to my heart 💕</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo5.jpg">
+                    <p>Some friendships just feel like home 🏠💖</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo6.jpg">
+                    <p>No explanation needed... just us 😂</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo7.jpg">
+                    <p>Another memory for our forever collection ✨</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo8.jpg">
+                    <p>This smile >>> everything 🥹💗</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo9.jpg">
+                    <p>Years may change, memories stay ❤️</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo10.jpg">
+                    <p>I'd choose this friendship all over again 💕</p>
+                </div>
+
+            </div>
+
+
+            <button onclick="showLetter()">
+                💌 A MESSAGE FOR YOU
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 5 -->
+
+    <section id="letterScreen" class="screen">
+
+        <div class="letter">
+
+            <div class="envelope">
+                💌
+            </div>
+
+            <h1>
+                Patalu, I need to tell you something... 💗
+            </h1>
+
+            <div id="letterText"></div>
+
+            <button onclick="showSecret()">
+                👀 ONE LAST THING
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 6 -->
+
+    <section id="secretScreen" class="screen">
+
+        <div class="secret">
+
+            <h1>
+                Patalu... 👀
+            </h1>
+
+            <p>
+                Don't click the button below...
+            </p>
+
+            <button onclick="finalSurprise()">
+                🚫 DON'T CLICK THIS 🚫
+            </button>
+
+            <p class="small-secret">
+                Seriously... don't 😂
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 7 -->
+
+    <section id="finalScreen" class="screen">
+
+        <div id="confetti"></div>
+
+        <div class="final">
+
+            <div class="fireworks">
+                🎆 ✨ 🎆
+            </div>
+
+            <p class="top-text">
+                You found the final surprise! 🥹💗
+            </p>
+
+            <h1>
+                HAPPY BIRTHDAY
+            </h1>
+
+            <h2>
+                PATALU! 💖
+            </h2>
+
+            <div class="big-heart">
+                💗
+            </div>
+
+            <p>
+                You are one of my favourite people
+                in this crazy little world. 🌎💕
+
+            </p>
+
+            <h3>
+                Here's to many more crazy,
+                beautiful and unforgettable memories together! ✨
+            </h3>
+
+            <p class="forever">
+                Our story isn't ending here...
+                <br>
+                We're just adding another chapter. 📖♾️❤️
+            </p>
+
+            <p class="signature">
+                — Your Best Friend 💕
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
